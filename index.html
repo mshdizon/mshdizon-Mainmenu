@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-dark" href="#">Your Sweets</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+        <div class="card1" onclick="showPopup('Cupcake')">
+          <img src="https://i.pinimg.com/564x/f6/96/6b/f6966bf55b81fb9d8cc46c121eecf818.jpg" class="card-img-top" alt="Product 1 Image">
+          <button type="button" class="btn btn-light">Order Now</button>
+        </div>
+
+
+        <div class="card2" onclick="showPopup('Bento Cake')">
+          <img src="https://i.pinimg.com/564x/14/70/6c/14706c07445b826f39bf9fb17848350f.jpg" class="card-img-top" alt="Product 2 Image">
+          <button type="button" class="btn btn-light">Order Now</button>
+        </div>
+
+
+        <div class="card3" onclick="showPopup('Cookies')">
+          <img src="https://i.pinimg.com/564x/a0/05/ec/a005ecb3986496c8d9ae060ad31499df.jpg" class="card-img-top" alt="Product 3 Image">
+          <button type="button" class="btn btn-light">Order Now</button> 
+        </div>
+  </div>
+  
+  <div id="popup" class="popup">
+    <div id="popupContent"></div>
+    <button class="btn btn-secondary popupButton" onclick="hidePopup()">Menu</button>
+  </div>
+  
+
+<script src="./script/script.js"></script>
+</body>
+</html>
